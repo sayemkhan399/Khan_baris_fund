@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import myImage from '../images/khan.png'; // Adjust the path as necessary
+// import Home from "./Home";
+import myImage from "../images/khan.png"; // Adjust the path as necessary
 import {
   Home as HomeIcon,
   Info,
@@ -23,7 +24,6 @@ const NavItem = ({ icon, text, sectionId, activeSection, onClick }) => (
     <span className="ml-3">{text}</span>
   </button>
 );
-
 
 // Main Home Component
 function Home() {
@@ -81,7 +81,9 @@ function Home() {
     <div className="min-h-screen flex flex-col font-sans bg-gradient-to-br from-gray-900 to-black text-gray-100">
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-purple-900 to-indigo-900 bg-opacity-70 backdrop-blur-md p-4 flex justify-between items-center rounded-b-lg shadow-md h-16">
-        <div className="text-xl font-bold text-purple-300"><img src={myImage} alt=""  className="h-30"/></div>
+        <div className="text-xl font-bold text-purple-300">
+          <img src={myImage} alt="" className="h-30" />
+        </div>
         <button
           onClick={toggleSidebar}
           className="text-purple-300 p-2 rounded-full hover:bg-purple-800 transition-colors"
@@ -285,44 +287,70 @@ function Home() {
                 </div>
                 {/* Investor List Table */}
                 <div className="bg-gray-800 p-6 rounded-lg shadow-md border border-gray-700 ">
-                  <h3 className="text-xl font-bold text-gray-100 mb-4">Investor List</h3>
+                  <h3 className="text-xl font-bold text-gray-100 mb-4">
+                    Investor List
+                  </h3>
                   <table className="min-w-full text-left border-collapse">
                     <thead className="bg-gray-700">
                       <tr>
-                        <th className="py-3 px-4 text-sm font-semibold text-gray-300 uppercase tracking-wider rounded-tl-lg">Name</th>
-                        <th className="py-3 px-4 text-sm font-semibold text-gray-300 uppercase tracking-wider">Mobile</th>
-                        <th className="py-3 px-4 text-sm font-semibold text-gray-300 uppercase tracking-wider text-right">Amount Invested</th>
+                        <th className="py-3 px-4 text-sm font-semibold text-gray-300 uppercase tracking-wider rounded-tl-lg">
+                          Name
+                        </th>
+                        <th className="py-3 px-4 text-sm font-semibold text-gray-300 uppercase tracking-wider">
+                          Mobile
+                        </th>
+                        <th className="py-3 px-4 text-sm font-semibold text-gray-300 uppercase tracking-wider text-right">
+                          Amount Invested
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-t border-gray-700 hover:bg-gray-700 transition-colors duration-150">
-                        <td className="py-3 px-4 text-gray-200">Alice Johnson</td>
-                        <td className="py-3 px-4 text-gray-400">alice@example.com</td>
-                        <td className="py-3 px-4 text-gray-200 text-right">$10,000</td>
+                        <td className="py-3 px-4 text-gray-200">
+                          Alice Johnson
+                        </td>
+                        <td className="py-3 px-4 text-gray-400">
+                          alice@example.com
+                        </td>
+                        <td className="py-3 px-4 text-gray-200 text-right">
+                          $10,000
+                        </td>
                       </tr>
                       <tr className="border-t border-gray-700 hover:bg-gray-700 transition-colors duration-150">
                         <td className="py-3 px-4 text-gray-200">Bob Smith</td>
-                        <td className="py-3 px-4 text-gray-400">bob@example.com</td>
-                        <td className="py-3 px-4 text-gray-200 text-right">$8,000</td>
-                        
+                        <td className="py-3 px-4 text-gray-400">
+                          bob@example.com
+                        </td>
+                        <td className="py-3 px-4 text-gray-200 text-right">
+                          $8,000
+                        </td>
                       </tr>
                       <tr className="border-t border-gray-700 hover:bg-gray-700 transition-colors duration-150">
                         <td className="py-3 px-4 text-gray-200">Carol Davis</td>
-                        <td className="py-3 px-4 text-gray-400">carol@example.com</td>
-                        <td className="py-3 px-4 text-gray-200 text-right">$5,000</td>
-                       
+                        <td className="py-3 px-4 text-gray-400">
+                          carol@example.com
+                        </td>
+                        <td className="py-3 px-4 text-gray-200 text-right">
+                          $5,000
+                        </td>
                       </tr>
                       <tr className="border-t border-gray-700 hover:bg-gray-700 transition-colors duration-150">
                         <td className="py-3 px-4 text-gray-200">David Lee</td>
-                        <td className="py-3 px-4 text-gray-400">david@example.com</td>
-                        <td className="py-3 px-4 text-gray-200 text-right">$15,000</td>
-                        
+                        <td className="py-3 px-4 text-gray-400">
+                          david@example.com
+                        </td>
+                        <td className="py-3 px-4 text-gray-200 text-right">
+                          $15,000
+                        </td>
                       </tr>
                       <tr className="border-t border-gray-700 hover:bg-gray-700 transition-colors duration-150">
                         <td className="py-3 px-4 text-gray-200">Eva Green</td>
-                        <td className="py-3 px-4 text-gray-400">eva@example.com</td>
-                        <td className="py-3 px-4 text-gray-200 text-right">$7,500</td>
-                        
+                        <td className="py-3 px-4 text-gray-400">
+                          eva@example.com
+                        </td>
+                        <td className="py-3 px-4 text-gray-200 text-right">
+                          $7,500
+                        </td>
                       </tr>
                     </tbody>
                   </table>
